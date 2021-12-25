@@ -1,0 +1,7 @@
+<h1>Editing Prospect</h1>
+
+<%= render 'form', prospect: @prospect %>
+<br/>
+<%= link_to 'Show', @prospect, class:"btn btn-secondary" %>
+<%= link_to 'Delete', @prospect, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+<%= link_to 'Back', prospects_path, class:"btn btn-dark" %>

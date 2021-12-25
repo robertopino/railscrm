@@ -1,0 +1,17 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+  <%= @prospect.first_name %>
+  <%= @prospect.last_name %>
+  </h1>
+  <p class="lead">
+    <%= @prospect.company %>  |
+    <%= @prospect.position %>  |
+    <%= @prospect.address %>  |
+    <%= @prospect.phone %>  |
+    <%= @prospect.email %>  |
+  </p>
+  <br/>
+  <%= link_to 'Edit', edit_prospect_path(@prospect), class:"btn btn-secondary" %>
+  <%= link_to 'Delete', @prospect, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+  <%= link_to 'Back', prospects_path, class:"btn btn-dark" %>
